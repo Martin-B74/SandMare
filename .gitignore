@@ -1,0 +1,41 @@
+# --- Environnement et secrets locaux ---
+.env
+.venv/
+Autre/
+
+# --- Caches Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- PyInstaller & builds ---
+build/
+dist/
+*.spec
+
+# --- Données brutes et télémétrie locale ---
+*.json
+.coverage
+logs_benign/
+logs_malware/
+
+# --- Échantillons et binaires lourds ---
+samples_benign/
+samples_malware/
+*.exe
+
+# --- Fichiers d'environnement VM & outils tiers ---
+Sysmon/
+Windows11_Client_x64*
+*.iso
+*.vmdk
+*.ova
+
+# --- Fichiers bureautiques et médias perso ---
+*.pdf
+*.jpg
+samples_benign/
+sandmare.egg-info/
+*.exe
+*.png
+# Attention : on ne met PAS *.txt ici pour ne pas bloquer requirements.txt
